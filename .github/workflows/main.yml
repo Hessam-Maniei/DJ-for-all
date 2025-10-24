@@ -21,7 +21,8 @@ jobs:
           python-version: '3.x'
 
       - name: Run journal.py
-        run: python .github-workflows/journal.py
+        run: run: python .github/workflows/journal.py
+
 
       - name: Commit and push changes
         run: |
