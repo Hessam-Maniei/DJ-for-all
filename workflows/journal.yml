@@ -1,32 +1,30 @@
-name: Daily-Journal
+name: 📝 Daily Journal Commit
 
 on:
   schedule:
-    - cron: "30 4 * * *"   # runs every day at 03:30 UTC
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    - cron: "0 6 * * *"   # runs every day at 06:00 UTC (→ 07:00 CET in winter)
+  workflow_dispatch:        # also allows manual run from the Actions tab
 
 jobs:
-  build:
+  generate-journal:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
-      - name: Run journal.py
-        run: python .github/workflows/journal.py
+      - name: Run Journal script
+        run: python Journal.py
 
       - name: Commit and push changes
         run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Automated journal update $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add journal/
+          git commit -m "📖 Auto journal entry $(date +'%Y-%m-%d')" || echo "No changes to commit"
           git push
