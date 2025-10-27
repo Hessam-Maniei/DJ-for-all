@@ -1,6 +1,3 @@
-
-
-name: Daily Commit
 from datetime import datetime
 import os
 
