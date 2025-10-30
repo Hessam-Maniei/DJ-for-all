@@ -61,3 +61,26 @@ footer {
   padding: 15px;
   font-size: 14px;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #fffaef;
+  padding: 15px;
+  gap: 15px;
+}
+
+nav button {
+  background-color: #22c540ff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background-color: #ff6f00;
+}
