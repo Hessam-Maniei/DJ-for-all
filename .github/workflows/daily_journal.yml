@@ -19,7 +19,7 @@ jobs:
           python-version: "3.x"
 
       - name: Run Journal script
-        run: python Journal.py
+        run: journal.py
 
       - name: Commit and push changes
         run: |
