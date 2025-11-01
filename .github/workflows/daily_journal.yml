@@ -1,4 +1,4 @@
-name: Daily Journal Commit
+name: daily_journal
 
 on:
   schedule:
@@ -19,7 +19,7 @@ jobs:
           python-version: "3.x"
 
       - name: Run Journal script
-        run: journal.py
+        run: Journal.py
 
       - name: Commit and push changes
         run: |
