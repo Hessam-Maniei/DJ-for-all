@@ -101,3 +101,33 @@ nav button:hover {
   width: 250px;
 }
 
+.prompt-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.prompt-form textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.prompt-form button {
+  margin-top: 10px;
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.prompt-form button:hover {
+  background-color: #ff5722;
+}
