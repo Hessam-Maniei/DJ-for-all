@@ -84,3 +84,20 @@ nav button {
 nav button:hover {
   background-color: #ff6f00;
 }
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.offer-card {
+  background-color: #fff3e0;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 250px;
+}
+
