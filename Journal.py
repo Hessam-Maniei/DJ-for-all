@@ -17,5 +17,5 @@ def create_journal():
 
 if __name__ == "__main__":
     create_journal()
-# Test commit from VS Code
+# Test commit from VS Code right
 
