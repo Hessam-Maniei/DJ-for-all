@@ -1,4 +1,4 @@
-name: Daily Journal Commit
+name: Run Journal.py
 
 on:
   schedule:
@@ -16,10 +16,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.1"
 
-      - name: Run Journal script
-        run: python Journal.py
+      - name: Run Journal.py
+        run: python3 Journal.py
 
       - name: Commit and push changes
         run: |
