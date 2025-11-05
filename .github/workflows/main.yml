@@ -18,10 +18,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.1'
 
-      - name: Run journal.py
-        run: /Users/hessam/Documents/GitHub/DJ-for-all/Journal.py
+      - name: Run Journal.py
+        run:  python Journal.py
 
 
       - name: Commit and push changes
