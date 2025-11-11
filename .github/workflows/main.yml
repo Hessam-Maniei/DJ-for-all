@@ -16,17 +16,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-<<<<<<< HEAD
           python-version: '3.8'
 
       - name: Install dependencies
         run: pip install -r requirements.txt
-=======
-          python-version: '3.8'
 
       - name: Run Journal.py
-        run:python3 Journal.py
->>>>>>> 1cc17e507894e3c2c701535693be8debb54c5c56
-
-      - name: Run Journal.py
-        run: python Journal.py
+        run: python3 Journal.py
