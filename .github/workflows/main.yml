@@ -18,8 +18,6 @@ jobs:
         with:
           python-version: '3.8'
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
 
       - name: Run Journal.py
         run: python3 Journal.py
