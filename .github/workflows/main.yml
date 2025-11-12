@@ -19,5 +19,5 @@ jobs:
           python-version: '3.8'
 
 
-      - name: Run Journal.py
-        run: python3 Journal.py
+      - name: Run journal.py
+        run: python3 journal.py
