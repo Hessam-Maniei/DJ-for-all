@@ -128,9 +128,6 @@ nav button:hover {
   cursor: pointer;
 }
 
-.prompt-form button:hover {
-  background-color: #ff5722;
-}
 .coffee-form {
   max-width: 500px;
   margin: 30px auto;
@@ -146,7 +143,7 @@ nav button:hover {
   resize: vertical;
 }
 
-.coffee-and tea bar form button {
+.coffee-form button {
   margin-top: 10px;
   padding: 10px 20px;
   background-color: #ff7f50;
