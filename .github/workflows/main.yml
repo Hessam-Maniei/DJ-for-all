@@ -21,3 +21,7 @@ jobs:
 
       - name: Run Journal.py
         run: python3 Journal.py
+ git add .
+git commit -m "Automated journal update ..."
+git push
+
