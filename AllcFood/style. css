@@ -131,3 +131,31 @@ nav button:hover {
 .prompt-form button:hover {
   background-color: #ff5722;
 }
+.coffee-form {
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.coffee-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  resize: vertical;
+}
+
+.coffee-and tea bar form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.coffee-form button:hover {
+  background-color: #ff5500;
+}
