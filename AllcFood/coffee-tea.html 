@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee or Tea Drink in Bits | AllcFood</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Coffee or Tea — Describe Your Drink</h1>
+
+  <p>Describe your drink (Taste, Origin, Experience, Brand, etc.):</p>
+
+  <form class="coffee-form">
+    <textarea placeholder="Example: 'Strong Ethiopian coffee with citrus notes...'" rows="6"></textarea>
+    <br>
+    <button type="submit">Submit Prompt</button>
+  </form>
+</body>
+</html>
