@@ -8,19 +8,72 @@
 
 </head>
 <body>
-<nav></nav>    
-  <button onclick="window.location.href='index.html'">Home</button>
-  <button onclick="window.location.href='shop.html'">Shop</button>
-  <button onclick="window.location.href='about.html'">About</button>
-  <button onclick="window.location.href='contact.html'">Contact</button>
-  <button onclick="window.location.href='offers.html'">Instant Offers</button>
-  <button onclick="window.location.href='prompt.html'">Write Your Prompt</button>
-  <button onclick="window.location.href='Coffee.html'">Coffee Bar</button>
-  <button onclick="window.location.href='language.html'">Language</button>
+<nav>
+  <button onclick="window.location.href='index.html'" id="menu-home">Home</button>
+  <button onclick="window.location.href='shop.html'" id="menu-shop">Shop</button>
+  <button onclick="window.location.href='about.html'" id="menu-about">About</button>
+  <button onclick="window.location.href='contact.html'" id="menu-contact">Contact</button>
+  <button onclick="window.location.href='offers.html'" id="menu-offers">Instant Offers</button>
+  <button onclick="window.location.href='prompt.html'" id="menu-prompt">Write Your Prompt</button>
+  <button onclick="window.location.href='Coffee.html'" id="menu-coffee">Coffee Bar</button>
 
-  
+  <!-- Language buttons -->
+  <button onclick="changeLanguage('en')">EN</button>
+  <button onclick="changeLanguage('de')">DE</button>
+  <button onclick="changeLanguage('fa')">FA</button>
+  <button onclick="changeLanguage('Ru')">Ru</button>
 
-   <nav>
+</nav>
+<script>
+const translations = {
+  en: {
+    "menu-home": "Home",
+    "menu-shop": "Shop",
+    "menu-about": "About",
+    "menu-contact": "Contact",
+    "menu-offers": "Instant Offers",
+    "menu-prompt": "Write Your Prompt",
+    "menu-coffee": "Coffee Bar"
+  },
+  de: {
+    "menu-home": "Startseite",
+    "menu-shop": "Shop",
+    "menu-about": "Über uns",
+    "menu-contact": "Kontakt",
+    "menu-offers": "Sofortangebote",
+    "menu-prompt": "Prompt schreiben",
+    "menu-coffee": "Kaffeebar"
+  },
+  fa: {
+    "menu-home": "خانه",
+    "menu-shop": "فروشگاه",
+    "menu-about": "درباره ما",
+    "menu-contact": "تماس با ما",
+    "menu-offers": "پیشنهادات فوری",
+    "menu-prompt": "نوشتن پرامپت",
+    "menu-coffee": "کافه"
+  },
+  Ru: {
+   "menu-home": "Главная",
+    "menu-shop": "Магазин",
+    "menu-about": "О нас",
+    "menu-contact": "Контакты",
+    "menu-offers": "Мгновенные предложения",
+    "menu-prompt": "Написать промпт",
+    "menu-coffee": "Кофейный бар"
+  }
+};
+
+function changeLanguage(lang) {
+  for (const key in translations[lang]) {
+    const element = document.getElementById(key);
+    if (element) {
+      element.textContent = translations[lang][key];
+    }
+  }
+}
+</script>
+
   <h1>Welcome to AllCFood 🍴</h1>
   <p>Your favorite place for discovering food ideas!</p>
 
