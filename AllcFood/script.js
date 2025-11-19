@@ -37,7 +37,7 @@ const translations = {
     "contact-title": "به فروشگاه AllCfood خوش آمدید",
     "contact-text": "اینجا می‌توانید فوراً برای ما بنویسید."
   },
-  ru: {
+  Ru: {
     // CONTACT PAGE ONLY
     "contact-title": "Добро пожаловать в магазин AllCfood",
     "contact-text": "Здесь вы можете написать нам мгновенно."
