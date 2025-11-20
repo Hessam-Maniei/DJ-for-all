@@ -19,7 +19,7 @@ jobs:
           python-version: '3.8'
 
 
-      - name: Run Journal.py
+      - name: Journal.py
         run: python3 Journal.py
         run: |
           git config --local user.name "github-actions[bot]"
