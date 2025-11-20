@@ -1,10 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Contact</title>
+</head>
 <body>
+
+<!-- NAVIGATION (same as index) -->
+<nav>
+  <button id="menu-home" onclick="location.href='index.html'">Home</button>
+  <button id="menu-shop" onclick="location.href='shop.html'">Shop</button>
+  <button id="menu-about" onclick="location.href='about.html'">About</button>
+  <button id="menu-contact" onclick="location.href='contact.html'">Contact</button>
+  <button id="menu-offers" onclick="location.href='offers.html'">Instant Offers</button>
+  <button id="menu-prompt" onclick="location.href='prompt.html'">Write Your Prompt</button>
+  <button id="menu-coffee" onclick="location.href='Coffee.html'">Coffee Bar</button>
+
+  <!-- Language dropdown -->
+  <select id="language-switcher" onchange="changeLanguage(this.value)">
+    <option value="en">EN</option>
+    <option value="de">DE</option>
+    <option value="fa">FA</option>
+    <option value="ru">RU</option>
+  </select>
+</nav>
 
 <h3 id="contact-title">Welcome to AllCfood Shop</h3>
 <p id="contact-text">Here you can write for us instantly.</p>
 
 <script src="script.js"></script>
 </body>
-
-
-
+</html>
