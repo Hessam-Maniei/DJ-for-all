@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Contact</title>
+  <meta charset="UTF-8">
+  <title>Contact – AllCfood</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
+
 <body>
 
-<!-- NAVIGATION (same as index) -->
-<nav>
-  <button id="menu-home" onclick="location.href='index.html'">Home</button>
-  <button id="menu-shop" onclick="location.href='shop.html'">Shop</button>
-  <button id="menu-about" onclick="location.href='about.html'">About</button>
-  <button id="menu-contact" onclick="location.href='contact.html'">Contact</button>
-  <button id="menu-offers" onclick="location.href='offers.html'">Instant Offers</button>
-  <button id="menu-prompt" onclick="location.href='prompt.html'">Write Your Prompt</button>
-  <button id="menu-coffee" onclick="location.href='Coffee.html'">Coffee Bar</button>
+  <!-- NAVBAR -->
+  <nav>
+    <ul>
+      <li><a id="nav-home" href="index.html">Home</a></li>
+      <li><a id="nav-offers" href="offers.html">Instant Offers</a></li>
+      <li><a id="nav-shop" href="shop.html">Shop</a></li>
+      <li><a id="nav-about" href="about.html">About</a></li>
+      <li><a id="nav-contact" href="contact.html">Contact</a></li>
 
-  <!-- Language dropdown -->
-  <select id="language-switcher" onchange="changeLanguage(this.value)">
-    <option value="en">EN</option>
-    <option value="de">DE</option>
-    <option value="fa">FA</option>
-    <option value="ru">RU</option>
-  </select>
-</nav>
+      <!-- LANGUAGE DROPDOWN -->
+      <li style="float:right;">
+        <select id="language-switcher" onchange="changeLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+          <option value="fa">فارسی</option>
+        </select>
+      </li>
+    </ul>
+  </nav>
 
-<h3 id="contact-title">Welcome to AllCfood Shop</h3>
-<p id="contact-text">Here you can write for us instantly.</p>
+  <!-- PAGE CONTENT -->
+  <section>
+    <h3 id="contact-title">Welcome to AllCfood Shop</h3>
+    <p id="contact-text">Here you can write for us instantly.</p>
+  </section>
 
-<script src="script.js"></script>
 </body>
 </html>
