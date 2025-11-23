@@ -1,28 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coffee or Tea Drink in Bits | AllcFood</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+
+
 <body>
-  <h1>coffee-tea — Describe Your Drink</h1>
 
-  <p>Describe your drink (Taste, Origin, Experience, Brand, etc.):</p>
+  <!-- NAVBAR -->
+  <nav>
+    <ul>
+      <li><a id="nav-home" href="index.html">Home</a></li>
+      <li><a id="nav-offers" href="offers.html">Instant Offers</a></li>
+      <li><a id="nav-shop" href="shop.html">Shop</a></li>
+      <li><a id="nav-about" href="about.html">About</a></li>
+      <li><a id="nav-contact" href="contact.html">Contact</a></li>
 
-  <form class="coffee-form">
-    <textarea placeholder="Example: 'Strong Ethiopian coffee with citrus notes...'" rows="6"></textarea>
-    <br>
-    <button type="submit">Submit Prompt</button>
-  </form>
-</body>
-</html>
-<h1 id="title">Welcome to ALLCFOOD</h1>
-<p id="subtitle">Best recipes and drinks</p>
-
-<nav>
-  <a id="menu-index" href="index.html">Index</a>
-  <a id="menu-coffee" href="coffee-tea.html">Coffee & Tea</a>
-  <a id="menu-food" href="food.html">Food</a>
-</nav>
+      <!-- LANGUAGE DROPDOWN -->
+      <li style="float:right;">
+        <select id="language-switcher" onchange="changeLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+          <option value="fa">فارسی</option>
+        </select>
+      </li>
+    </ul>
+  </nav>
+<script src="script.js"></script>
+<h1 id="coffee-title">Coffee & Tea</h1>
+<p id="coffee-text">Explore our exclusive selection of coffees and teas.</p>
