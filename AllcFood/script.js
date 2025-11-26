@@ -31,7 +31,7 @@ const translations = {
     // SHOP PAGE
     "shop-title": "Shop",
     "shop-text": "Browse our selection of authentic foods from around the world.",
-
+               : "Here you can find ingredients and products to make your favorite dishes at home.",
     // PROMPT PAGE
     "prompt-title": "Write Your Prompt",
     "prompt-text": "Describe what food you want. We will recommend the best match!",
@@ -70,7 +70,7 @@ const translations = {
     // SHOP PAGE
     "shop-title": "Shop",
     "shop-text": "Stöbern Sie in unserer Auswahl an authentischen Lebensmitteln aus aller Welt.",
-
+                : "Hier finden Sie Zutaten und Produkte, um Ihre Lieblingsgerichte zu Hause zuzubereiten.",
     // PROMPT PAGE
     "prompt-title": "Prompt schreiben",
     "prompt-text": "Beschreiben Sie das gewünschte Essen. Wir empfehlen die beste Option!",
@@ -109,7 +109,7 @@ const translations = {
     // SHOP PAGE
     "shop-title": "فروشگاه",
     "shop-text": "از میان مجموعه‌ای از غذاهای اصیل کشورهای مختلف انتخاب کنید.",
-
+                : "اینجا می‌توانید مواد اولیه و محصولات لازم برای تهیه غذاهای موردعلاقه خود در خانه را پیدا کنید.",
     // PROMPT PAGE
     "prompt-title": "نوشتن پرامپت",
     "prompt-text": "غذای مورد نظر خود را توصیف کنید. ما بهترین پیشنهاد را ارائه می‌دهیم!",
