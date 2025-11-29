@@ -31,7 +31,8 @@ const translations = {
     // SHOP PAGE
     "shop-title": "Shop",
     "shop-text": "Browse our selection of authentic foods from around the world.",
-               : "Here you can find ingredients and products to make your favorite dishes at home.",
+    "shop-text2": "Here you can find ingredients and products to make your favorite dishes at home.",
+
     // PROMPT PAGE
     "prompt-title": "Write Your Prompt",
     "prompt-text": "Describe what food you want. We will recommend the best match!",
@@ -65,12 +66,13 @@ const translations = {
 
     // ABOUT PAGE
     "about-title": "Über AllCfood",
-    "about-text": "Auf dieser Website finden Sie Ihre Lieblingsgerichte aus Ihrem Heimatland von originalen Herstellern. Fühlen Sie sich frei und leben Sie wie zu Hause in Europa.",
+    "about-text": "Auf dieser Website finden Sie Ihre Lieblingsgerichte aus Ihrem Heimatland von ursprünglichen Herstellern. Fühlen Sie sich frei und leben Sie wie zu Hause in Europa.",
 
     // SHOP PAGE
     "shop-title": "Shop",
     "shop-text": "Stöbern Sie in unserer Auswahl an authentischen Lebensmitteln aus aller Welt.",
-                : "Hier finden Sie Zutaten und Produkte, um Ihre Lieblingsgerichte zu Hause zuzubereiten.",
+    "shop-text2": "Hier finden Sie Zutaten und Produkte, um Ihre Lieblingsgerichte zu Hause zuzubereiten.",
+
     // PROMPT PAGE
     "prompt-title": "Prompt schreiben",
     "prompt-text": "Beschreiben Sie das gewünschte Essen. Wir empfehlen die beste Option!",
@@ -104,12 +106,13 @@ const translations = {
 
     // ABOUT PAGE
     "about-title": "درباره آل‌سی‌فود",
-    "about-text": "در این وب‌سایت می‌توانید غذای موردعلاقه از کشور خود را از تولیدکنندگان اصلی پیدا کنید. آزاد باشید و در اروپا مثل خانه خود زندگی کنید.",
+    "about-text": "در این وب‌سایت می‌توانید غذای مورد علاقه از کشور خود را از تولیدکنندگان اصلی پیدا کنید. آزاد باشید و مثل خانه خود در اروپا زندگی کنید.",
 
     // SHOP PAGE
     "shop-title": "فروشگاه",
     "shop-text": "از میان مجموعه‌ای از غذاهای اصیل کشورهای مختلف انتخاب کنید.",
-               : "اینجا می‌توانید مواد اولیه و محصولات لازم برای تهیه غذاهای موردعلاقه خود در خانه را پیدا کنید.",
+    "shop-text2": "اینجا می‌توانید مواد اولیه و محصولات لازم برای تهیه غذاهای مورد علاقه خود را پیدا کنید.",
+
     // PROMPT PAGE
     "prompt-title": "نوشتن پرامپت",
     "prompt-text": "غذای مورد نظر خود را توصیف کنید. ما بهترین پیشنهاد را ارائه می‌دهیم!",
@@ -143,11 +146,12 @@ const translations = {
 
     // ABOUT PAGE
     "about-title": "О AllCfood",
-    "about-text": "Здесь вы найдете любимую еду из своей страны от оригинальных производителей. Чувствуйте себя как дома, живя в Европе.",
+    "about-text": "Здесь вы найдете любимую еду из вашей страны от оригинальных производителей. Чувствуйте себя как дома в Европе.",
 
     // SHOP PAGE
     "shop-title": "Магазин",
     "shop-text": "Изучите наш ассортимент аутентичных продуктов со всего мира.",
+    "shop-text2": "Здесь вы найдете ингредиенты и продукты для любимых блюд дома.",
 
     // PROMPT PAGE
     "prompt-title": "Написать промпт",
@@ -171,7 +175,7 @@ function changeLanguage(lang) {
     if (el) el.textContent = text[key];
   }
 
-  // RTL SUPPORT
+  // RTL SUPPORT (Persian)
   if (lang === "fa") {
     document.body.style.direction = "rtl";
     document.body.style.textAlign = "right";
@@ -184,8 +188,9 @@ function changeLanguage(lang) {
 // ---------- LOAD SAVED LANGUAGE ----------
 document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("language") || "en";
-  const select = document.getElementById("language-select");
 
+  const select = document.getElementById("language-switcher");
   if (select) select.value = savedLang;
+
   changeLanguage(savedLang);
 });
