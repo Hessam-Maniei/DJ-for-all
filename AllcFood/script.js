@@ -80,7 +80,14 @@ const translations = {
     // COFFEE PAGE
     "coffee-title": "Kaffee & Tee",
     "coffee-text": "Entdecken Sie unsere exklusive Auswahl an Kaffees und Tees."
+
+    // COFFEE PAGE
+    "essence-title": "Essence",
+    "essence-description": "This is the Essence page."
+
+
   },
+  
 
   fa: {
     // MENU
@@ -120,6 +127,12 @@ const translations = {
     // COFFEE PAGE
     "coffee-title": "قهوه و چای",
     "coffee-text": "مجموعه‌ای از قهوه‌ها و چای‌های ویژه را بررسی کنید."
+    
+    // essence PAGE
+    "essence-title": "اسانس",
+    "essence-description": "این صفحه اسانس است."
+
+
   },
 
   ru: {
