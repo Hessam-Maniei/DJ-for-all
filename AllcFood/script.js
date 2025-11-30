@@ -40,6 +40,9 @@ const translations = {
     // COFFEE PAGE
     "coffee-title": "Coffee & Tea",
     "coffee-text": "Explore our exclusive selection of coffees and teas."
+    // ESSENCE PAGE
+    "essence-title": "Essence",
+    "essence-description": "This is the essence page."
   },
 
   de: {
@@ -82,8 +85,9 @@ const translations = {
     "coffee-text": "Entdecken Sie unsere exklusive Auswahl an Kaffees und Tees."
 
     // COFFEE PAGE
-    "essence-title": "Essence",
-    "essence-description": "This is the Essence page."
+    "essence-title": "Essenz",
+    "essence-description": "Dies ist die Essenz-Seite."
+
 
 
   },
