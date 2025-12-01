@@ -26,7 +26,7 @@ const translations = {
 
     // ABOUT PAGE
     "about-title": "About AllCfood",
-    "about-text": "In this website you can find your favorite food from your original country from original producers. Feel free and live like your home in Europe.",
+    "about-text": "In this website you can find your favorite food from your original country from original producers.",
 
     // SHOP PAGE
     "shop-title": "Shop",
@@ -39,7 +39,8 @@ const translations = {
 
     // COFFEE PAGE
     "coffee-title": "Coffee & Tea",
-    "coffee-text": "Explore our exclusive selection of coffees and teas."
+    "coffee-text": "Explore our exclusive selection of coffees and teas.",
+
     // ESSENCE PAGE
     "essence-title": "Essence",
     "essence-description": "This is the essence page."
@@ -69,7 +70,7 @@ const translations = {
 
     // ABOUT PAGE
     "about-title": "Über AllCfood",
-    "about-text": "Auf dieser Website finden Sie Ihre Lieblingsgerichte aus Ihrem Heimatland von ursprünglichen Herstellern. Fühlen Sie sich frei und leben Sie wie zu Hause in Europa.",
+    "about-text": "Auf dieser Website finden Sie Ihre Lieblingsgerichte aus Ihrem Heimatland.",
 
     // SHOP PAGE
     "shop-title": "Shop",
@@ -82,16 +83,12 @@ const translations = {
 
     // COFFEE PAGE
     "coffee-title": "Kaffee & Tee",
-    "coffee-text": "Entdecken Sie unsere exklusive Auswahl an Kaffees und Tees."
+    "coffee-text": "Entdecken Sie unsere exklusive Auswahl an Kaffees und Tees.",
 
-    // COFFEE PAGE
+    // ESSENCE PAGE
     "essence-title": "Essenz",
     "essence-description": "Dies ist die Essenz-Seite."
-
-
-
   },
-  
 
   fa: {
     // MENU
@@ -117,7 +114,7 @@ const translations = {
 
     // ABOUT PAGE
     "about-title": "درباره آل‌سی‌فود",
-    "about-text": "در این وب‌سایت می‌توانید غذای مورد علاقه از کشور خود را از تولیدکنندگان اصلی پیدا کنید. آزاد باشید و مثل خانه خود در اروپا زندگی کنید.",
+    "about-text": "در این وب‌سایت می‌توانید غذای مورد علاقه از کشور خود را از تولیدکنندگان اصلی پیدا کنید.",
 
     // SHOP PAGE
     "shop-title": "فروشگاه",
@@ -130,13 +127,11 @@ const translations = {
 
     // COFFEE PAGE
     "coffee-title": "قهوه و چای",
-    "coffee-text": "مجموعه‌ای از قهوه‌ها و چای‌های ویژه را بررسی کنید."
-    
-    // essence PAGE
+    "coffee-text": "مجموعه‌ای از قهوه‌ها و چای‌های ویژه را بررسی کنید.",
+
+    // ESSENCE PAGE
     "essence-title": "اسانس",
     "essence-description": "این صفحه اسانس است."
-
-
   },
 
   ru: {
@@ -163,7 +158,7 @@ const translations = {
 
     // ABOUT PAGE
     "about-title": "О AllCfood",
-    "about-text": "Здесь вы найдете любимую еду из вашей страны от оригинальных производителей. Чувствуйте себя как дома в Европе.",
+    "about-text": "Здесь вы найдете любимую еду из вашей страны от оригинальных производителей.",
 
     // SHOP PAGE
     "shop-title": "Магазин",
@@ -179,35 +174,3 @@ const translations = {
     "coffee-text": "Откройте для себя наш эксклюзивный выбор кофе и чая."
   }
 };
-
-// ---------- LANGUAGE SWITCH ----------
-function changeLanguage(lang) {
-  localStorage.setItem("language", lang);
-
-  const text = translations[lang];
-  if (!text) return;
-
-  for (const key in text) {
-    const el = document.getElementById(key);
-    if (el) el.textContent = text[key];
-  }
-
-  // RTL SUPPORT (Persian)
-  if (lang === "fa") {
-    document.body.style.direction = "rtl";
-    document.body.style.textAlign = "right";
-  } else {
-    document.body.style.direction = "ltr";
-    document.body.style.textAlign = "left";
-  }
-}
-
-// ---------- LOAD SAVED LANGUAGE ----------
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("language") || "en";
-
-  const select = document.getElementById("language-switcher");
-  if (select) select.value = savedLang;
-
-  changeLanguage(savedLang);
-});
